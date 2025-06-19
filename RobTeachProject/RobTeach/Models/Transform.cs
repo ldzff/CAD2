@@ -31,6 +31,12 @@ namespace RobTeach.Models
         public double OffsetY { get; set; } = 0.0;
 
         /// <summary>
+        /// Gets or sets the offset along the Z-axis.
+        /// </summary>
+        /// <value>Default is 0.0.</value>
+        public double OffsetZ { get; set; } = 0.0;
+
+        /// <summary>
         /// Gets or sets the rotation angle in degrees.
         /// </summary>
         /// <value>Default is 0.0.</value>
@@ -42,6 +48,7 @@ namespace RobTeach.Models
         public Transform()
         {
             // Default constructor
+            OffsetZ = 0.0;
         }
     }
 }
